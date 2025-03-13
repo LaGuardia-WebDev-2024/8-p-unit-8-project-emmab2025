@@ -8,7 +8,7 @@ setup = function() {
     drawFish(300, 200, color(0,200,200));
    
     drawcoral(100,300,color(0,250,250));
-    drawcoral(200,320,color(0,250,250));
+    drawplant(200,320,color(0,250,250));
 };
 
 //🟢draw Function - will run on repeat
@@ -50,6 +50,14 @@ var drawcoral = function(coralX,coralY, coralcolor){
   fill(coralcolor);
   text("🌿", coralX, coralY);
   
+    ;}
+    
+  
+  //🟡drawplant Function - will run when called
+var drawplant = function(plantX,plantY, plantcolor){
+  textSize(80);
+  fill(plantcolor);
+  text("🍃", plantX, plantY);
   
   
 
